@@ -8,6 +8,10 @@ body {
   background-color: #f6f7fb;
   font-family: 'Montserrat', sans-serif;
   color: #1f2933;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 body.no-scroll {
@@ -31,14 +35,19 @@ strong {
 }
 
 
+
 button {
-  all: unset; /* remove TUDO do estilo nativo */
-  cursor: pointer; /* devolve o cursor */
-  display: inline-block; /* comportamento mais natural */
+  all: unset;
+  /* remove TUDO do estilo nativo */
+  cursor: pointer;
+  /* devolve o cursor */
+  display: inline-block;
+  /* comportamento mais natural */
 }
 
 button:focus {
-  outline: none; /* remove outline nativo */
+  outline: none;
+  /* remove outline nativo */
 }
 
 button:disabled {
@@ -53,7 +62,7 @@ button:disabled {
 
 /* o nav já tem uma largura fixa */
 app-nav {
-  display: block; /* garante que o Angular não trate como inline */
+  display: block;
+  /* garante que o Angular não trate como inline */
 }
 
-/* área de conteúdo ocupa o resto */
