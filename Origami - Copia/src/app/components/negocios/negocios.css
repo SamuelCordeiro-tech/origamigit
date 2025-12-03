@@ -1,0 +1,144 @@
+/* Component: negocios
+  Descrição: Estilos do componente `negocios`.
+*/
+
+.wiki-sidebar {
+  width: 200px;
+  padding: 32px 24px;
+  background-color: #f9fafb;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+
+.wiki-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wiki-nav-button {
+  background-color: none;
+  font-size: 14px;
+  color: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+}
+
+.wiki-nav-button img {
+  rotate: 180deg;
+  margin-right: 30px;
+  opacity: 20%;
+}
+
+.wiki-nav-button:hover {
+  color: #000;
+  font-weight: 500;
+  background-color: #f3f4ff;
+  border-color: #55dd92;
+  padding: 10px;
+}
+
+.wiki-nav-icon:hover {
+  rotate: 180deg;
+  margin-left: 5px;
+}
+
+.wiki-nav-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.wiki-nav-item:hover {
+  background-color: #f3f4ff;
+  border-color: #55dd92;
+}
+
+.wiki-nav-item.is-active {
+  background-color: #00bb8c10;
+  border-color: #00bb8c;
+  color: #007535;
+}
+
+.wiki-logo {
+  width: 50%;
+}
+
+/* ========================================================= */
+/* ======================= MOBILE =========================== */
+/* ========================================================= */
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 700;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Overlay escurecido */
+.sidebar-overlay {
+  display: none;
+}
+
+.sidebar-overlay.active {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 650;
+}
+
+/* ===== MOBILE BREAKPOINT ===== */
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Sidebar vira menu lateral deslizante */
+  .wiki-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    height: 100vh;
+    padding: 24px;
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+    transition: left 0.3s ease;
+    z-index: 900;
+  }
+
+  .wiki-sidebar.open {
+    left: 0;
+  }
+
+  /* Espaço para que o ícone não cubra o título */
+  .wiki-main {
+    padding: 24px 16px 40px;
+    padding-left: 64px;
+  }
+
+  .wiki-main-header h2 {
+    margin-top: 16px;
+  }
+}

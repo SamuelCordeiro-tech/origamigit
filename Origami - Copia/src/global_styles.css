@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* ===== GLOBAL ===== */
+body {
+  width: 100%;
+  margin: 0;
+  min-height: 100vh;
+  background-color: #f6f7fb;
+  font-family: 'Montserrat', sans-serif;
+  color: #1f2933;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+p,
+li,
+strong {
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+button {
+  all: unset; /* remove TUDO do estilo nativo */
+  cursor: pointer; /* devolve o cursor */
+  display: inline-block; /* comportamento mais natural */
+}
+
+button:focus {
+  outline: none; /* remove outline nativo */
+}
+
+button:disabled {
+  cursor: default;
+  opacity: 0.6;
+}
+
+.wiki-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* o nav já tem uma largura fixa */
+app-nav {
+  display: block; /* garante que o Angular não trate como inline */
+}
+
+/* área de conteúdo ocupa o resto */

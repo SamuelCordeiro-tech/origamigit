@@ -1,0 +1,36 @@
+<!-- Component: footer
+  Descrição: Template do rodapé do site (footer).
+-->
+<footer class="site-footer">
+  <div class="site-footer__inner">
+    <!-- Linha superior: logo + navegação principal -->
+    <div class="site-footer__top">
+      <div class="site-footer__brand">
+        <!-- pode trocar por <img> se quiser -->
+        <span class="site-footer__brand-mark">⧉</span>
+        <span class="site-footer__brand-name">Origami Design</span>
+      </div>
+
+      <nav class="site-footer__nav">
+        <a routerLink="#" class="site-footer__link">Origami</a>
+        <a routerLink="/wiki/dev" class="site-footer__link">Desenvolvedores</a>
+        <a routerLink="/wiki/bemvindo" class="site-footer__link"
+          >Documentação</a
+        >
+        <a routerLink="/wiki/button" class="site-footer__link">Componentes</a>
+        <a href="https://www.tokiomarine.com.br/" class="site-footer__link"
+          >Tokio Marine</a
+        >
+      </nav>
+    </div>
+
+    <!-- Linha inferior: legal -->
+    <div class="site-footer__bottom">
+      <div class="site-footer__legal">
+        <span class="site-footer__copy">
+          © {{ currentYear || '2025' }} Tokio Marine · Origami Design System
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
