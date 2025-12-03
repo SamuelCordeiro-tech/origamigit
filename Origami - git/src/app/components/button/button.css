@@ -1,0 +1,247 @@
+/* Component: button
+  Descrição: Estilos do componente `button`.
+*/
+
+.wiki-sidebar {
+  width: 200px;
+  padding: 32px 24px;
+  background-color: #f9fafb;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ===== NAVEGAÇÃO ===== */
+
+.wiki-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wiki-nav-button {
+  background-color: none;
+  font-size: 14px;
+  color: none;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+  border: none;
+}
+
+.wiki-nav-button img {
+  rotate: 180deg;
+  margin-right: 30px;
+  opacity: 20%;
+}
+
+.wiki-nav-button:hover {
+  color: #000;
+  font-weight: 500;
+  background-color: #f3f4ff;
+  border-color: #55dd92;
+  padding: 10px;
+}
+
+.wiki-nav-icon:hover {
+  rotate: 180deg;
+  margin-left: 5px;
+}
+
+.wiki-nav-item {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+
+  font-size: 13px;
+  color: #000000;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.wiki-nav-item:hover {
+  background-color: #f3f4ff;
+  border-color: #55dd92;
+}
+
+.wiki-nav-item.is-active {
+  background-color: #00bb8c10;
+  border-color: #00bb8c;
+  color: #007535;
+}
+
+.wiki-logo {
+  width: 50%;
+}
+
+/* ========================================================= */
+/* ======================= MOBILE =========================== */
+/* ========================================================= */
+
+.menu-toggle {
+  display: none;
+  position: fixed;
+  top: 16px;
+  left: 16px;
+  z-index: 700;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Overlay escurecido */
+.sidebar-overlay {
+  display: none;
+}
+
+.sidebar-overlay.active {
+  display: block;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(2px);
+  z-index: 650;
+}
+
+/* ===== MOBILE BREAKPOINT ===== */
+
+@media (max-width: 900px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Sidebar vira menu lateral deslizante */
+  .wiki-sidebar {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 260px;
+    height: 100vh;
+    padding: 24px;
+    background-color: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    box-shadow: 2px 0 12px rgba(0, 0, 0, 0.15);
+    transition: left 0.3s ease;
+    z-index: 900;
+  }
+
+  .wiki-sidebar.open {
+    left: 0;
+  }
+
+  /* Espaço para que o ícone não cubra o título */
+  .wiki-main {
+    padding: 24px 16px 40px;
+    padding-left: 64px;
+  }
+
+  .wiki-main-header h2 {
+    margin-top: 16px;
+  }
+}
+
+:root {
+  --ds-bg: #f6f7fb;
+  --ds-surface: #ffffff;
+  --ds-text: #1f2933;
+  --ds-subtext: #6b7280;
+  --ds-primary: #00a874; /* verde principal */
+  --ds-primary-soft: #e8f8f2;
+  --ds-border: #e4e7ec;
+  --ds-divider: #e5e7eb;
+  --ds-disabled: #9ca3af;
+  --ds-muted: #d1d5db;
+  --ds-focus: #a855f7;
+}
+
+/* RESET SIMPLES */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* LAYOUT GERAL DA PÁGINA */
+.ds-page {
+  margin-top: 40px;
+}
+
+/* CABEÇALHO */
+.ds-header {
+  max-width: 560px;
+  margin-bottom: 32px;
+}
+
+.ds-breadcrumb {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ds-primary);
+  margin-bottom: 8px;
+}
+
+.ds-title {
+  font-size: 32px;
+  line-height: 1.2;
+  margin: 0 0 12px;
+}
+
+.ds-description {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--ds-subtext);
+  margin: 0 0 8px;
+}
+
+.ds-list {
+  margin: 0 0 24px 18px;
+  padding: 0;
+  color: var(--ds-subtext);
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.ds-list li {
+  margin-bottom: 3px;
+}
+
+/* LINHA TRACEJADA */
+.ds-divider {
+  width: 100%;
+  border-bottom: 1px dashed var(--ds-divider);
+  margin: 16px 0 20px;
+  color: #000;
+}
+
+/* CHIP "MATERIAL" */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 18px;
+  border: 1px solid var(--ds-border);
+  background-color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--ds-text);
+  cursor: default;
+}
+
+.chip-with-icon {
+  padding-right: 12px;
+}
+
+.section-button {
+  margin-top: 16px;
+  display: grid;
+  gap: 8px;
+}
+
+hr {
+  margin-top: 24px;
+  opacity: 10%;
+}

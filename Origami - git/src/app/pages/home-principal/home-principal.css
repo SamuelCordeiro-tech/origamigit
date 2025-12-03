@@ -1,0 +1,236 @@
+/* ========================================================= */
+/* ECOSSISTEMA ORIGAMI           */
+/* ========================================================= */
+
+.origami-ecosystem {
+  position: relative;
+  padding: 40px 24px 72px;
+    background: radial-gradient(circle at 0% 0%, #fdf2ff 0, transparent 50%),
+    radial-gradient(circle at 80% 0%, #e0f9ff 0, transparent 55%),
+    radial-gradient(circle at 0% 100%, #fef3c7 0, transparent 50%);
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.origami-ecosystem::before {
+  content: '';
+  position: absolute;
+  inset: -20% auto auto 55%;
+  width: 260px;
+  height: 260px;
+  background: radial-gradient(circle, rgba(168, 85, 247, 0.28), transparent 70%);
+  mix-blend-mode: screen;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.origami-ecosystem-header {
+  max-width: 720px;
+  margin: 0 auto 32px;
+  text-align: center;
+}
+
+.ecosystem-kicker {
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #a855f7;
+  margin-bottom: 8px;
+}
+
+.origami-ecosystem-header h2 {
+  margin: 0 0 12px;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 600;
+  color: #111827;
+}
+
+.ecosystem-lead {
+  margin: 0;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+/* GRID */
+
+.origami-ecosystem-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1040px;
+  margin: 24px auto 0;
+}
+
+/* CARD BASE */
+
+.origami-tier {
+  position: relative;
+  border-radius: 20px;
+  background: #ffffff;
+  padding: 18px 16px 20px;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  animation: tier-enter 600ms cubic-bezier(0.22, 0.61, 0.36, 1) both;
+  transition: transform 220ms ease-out, box-shadow 220ms ease-out;
+}
+
+.origami-tier:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 24px 48px rgba(15, 23, 42, 0.18);
+}
+
+/* DOBRA SUPERIOR */
+
+.origami-fold {
+  position: relative;
+  height: 52px;
+  margin: -18px -16px 14px;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  transition: transform 300ms cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.origami-tier:hover .origami-fold {
+  transform: rotateX(-20deg);
+}
+
+.origami-fold-front,
+.origami-fold-back {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  padding-inline: 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #ffffff;
+  backface-visibility: hidden;
+}
+
+/* Frente */
+.origami-fold-front {
+  transform: rotateX(0deg);
+}
+
+/* Verso */
+.origami-fold-back {
+  transform: rotateX(-180deg);
+  opacity: 0.6;
+}
+
+/* CORES */
+/* CORES POR TIER */
+
+/* Origami (externo) – VERDE */
+.origami-tier--origami .origami-fold-front {
+  background: linear-gradient(120deg, #0f766e, #22c55e);
+}
+.origami-tier--origami .origami-fold-back {
+  background: linear-gradient(120deg, #065f46, #16a34a);
+}
+
+/* Origami Core – ROXO */
+.origami-tier--core .origami-fold-front {
+  background: linear-gradient(120deg, #a855f7, #ec4899);
+}
+.origami-tier--core .origami-fold-back {
+  background: linear-gradient(120deg, #7c3aed, #db2777);
+}
+
+/* Origami App – AZUL */
+.origami-tier--app .origami-fold-front {
+  background: linear-gradient(120deg, #0ea5e9, #6366f1);
+}
+.origami-tier--app .origami-fold-back {
+  background: linear-gradient(120deg, #0369a1, #4f46e5);
+}
+
+
+/* CONTEÚDO DO CARD */
+
+.origami-tier-body {
+  position: relative;
+  z-index: 2;
+}
+
+.origami-tier h3 {
+  margin: 2px 0 6px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+  transition: none !important; /* impede recuo/escape */
+}
+
+.origami-tier p {
+  margin: 0 0 8px;
+  font-size: 13px;
+  color: #4b5563;
+}
+
+.origami-tier ul {
+  margin: 0 0 12px;
+  padding-left: 18px;
+  list-style: disc;
+}
+
+.origami-tier li {
+  font-size: 12px;
+  color: #6b7280;
+  line-height: 1.5;
+}
+
+/* CTA */
+
+.origami-tier-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #0f172a;
+  background: #f9fafb;
+  box-shadow: 0 8px 18px rgba(15, 23, 42, 0.12);
+  transition: background 0.18s ease-out, transform 0.18s ease-out;
+}
+
+.origami-tier-cta:hover {
+  background: #fefce8;
+  transform: translateY(-1px);
+}
+
+.cta-disabled{
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: default;
+}
+
+/* ENTRADA */
+
+@keyframes tier-enter {
+  0% {
+    opacity: 0;
+    transform: translateY(18px) scale(0.96);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  .origami-ecosystem {
+    padding: 28px 20px 52px;
+  }
+  .origami-ecosystem-grid {
+    grid-template-columns: 1fr;
+  }
+}
