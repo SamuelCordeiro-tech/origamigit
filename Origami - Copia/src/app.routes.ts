@@ -13,4 +13,8 @@ export const appRoutes: Routes = [
     children: wikiChildRoutes, // <-- CARREGA AS ROTAS INTERNAS
   },
   { path: '**', redirectTo: '' },
-];
+]
+
+;
+
+

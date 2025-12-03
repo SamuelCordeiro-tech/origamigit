@@ -205,6 +205,12 @@
   transform: translateY(-1px);
 }
 
+.cta-disabled{
+  pointer-events: none;
+  opacity: 0.6;
+  cursor: default;
+}
+
 /* ENTRADA */
 
 @keyframes tier-enter {
