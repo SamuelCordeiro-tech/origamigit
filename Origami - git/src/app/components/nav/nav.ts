@@ -27,7 +27,6 @@ export class NavWiki {
 
   // termo digitado na busca (vale pra docs e componentes)
   searchTerm = '';
-
   docs: NavItem[] = [
     {
       label: 'Bem Vindo à Origami',
@@ -36,18 +35,30 @@ export class NavWiki {
         'home',
         'início',
         'bem vindo',
+        'bem-vindo',
         'inicial',
         'start',
         'começo',
         'apresentação',
+        'apresentacao',
         'welcome',
         'overview',
         'sumário',
+        'sumario',
         'introdução',
+        'introducao',
         'origami',
         'origami home',
         'página inicial',
+        'pagina inicial',
         'primeira página',
+        'primeira pagina',
+        'guia rápido',
+        'guia rapido',
+        'instrucoes',
+        'introducao rapida',
+        'visao geral',
+        'overview geral',
       ],
     },
     {
@@ -55,21 +66,32 @@ export class NavWiki {
       route: 'sobre',
       keywords: [
         'introdução',
+        'introducao',
         'geral',
         'sobre',
         'conceitos',
         'fundamentos',
         'princípios',
+        'principios',
         'documentação',
+        'documentacao',
         'guia inicial',
+        'guia',
         'base',
         'core',
         'explicação',
+        'explicacao',
         'informações',
+        'informacoes',
         'o que é',
+        'oquee',
         'overview',
         'contexto',
         'sumário',
+        'sumario',
+        'referência',
+        'referencia',
+        'introducao detalhada',
       ],
     },
     {
@@ -77,18 +99,30 @@ export class NavWiki {
       route: 'visao',
       keywords: [
         'acessibilidade',
+        'acessivel',
+        'acessível',
         'visão',
+        'visao',
         'a11y',
         'wcag',
-        'acessível',
         'contraste',
         'leitor de tela',
+        'leitordetela',
         'screen reader',
         'acessibilidade digital',
         'ux',
         'usabilidade',
         'normas',
         'diretrizes',
+        'acessibilidade web',
+        'acessibilidade ui',
+        'acessibilidade ux',
+        'inclusão',
+        'acesso',
+        'boa prática',
+        'boas praticas',
+        'legibilidade',
+        'contrast ratio',
       ],
     },
     {
@@ -96,19 +130,31 @@ export class NavWiki {
       route: 'negocios',
       keywords: [
         'negócios',
+        'negocios',
         'produto',
         'business',
         'gestão',
+        'gestao',
         'liderança',
+        'lideranca',
         'stakeholders',
         'planejamento',
         'visão executiva',
+        'visao executiva',
         'benefícios',
+        'beneficios',
         'estratégia',
+        'estrategia',
         'comunicação',
+        'comunicacao',
         'empresa',
         'valor',
         'pessoas de negócios',
+        'stakeholder',
+        'case de negócio',
+        'ROI',
+        'retorno',
+        'gestão de produto',
       ],
     },
     {
@@ -117,23 +163,34 @@ export class NavWiki {
       keywords: [
         'dev',
         'desenvolvedor',
+        'desenvolvedores',
         'técnico',
+        'tecnico',
         'engenharia',
         'frontend',
         'backend',
         'programação',
+        'programacao',
         'código',
+        'codigo',
         'code',
         'angular',
         'typescript',
+        'ts',
         'desenvolvimento',
         'api',
         'componentes',
+        'component',
         'documentação técnica',
+        'documentacao tecnica',
         'tecnologia',
         'developer',
         'frontend dev',
         'fullstack',
+        'stack',
+        'sdk',
+        'integração',
+        'integraçao',
       ],
     },
     {
@@ -142,18 +199,26 @@ export class NavWiki {
       keywords: [
         'uso',
         'utilizar',
+        'como usar',
         'guia',
+        'guia prático',
+        'guia pratico',
         'manual',
         'tutorial',
         'exemplos',
-        'como usar',
-        'como funciona',
+        'exemplo',
         'documentação prática',
+        'documentacao pratica',
         'passo a passo',
         'aprender',
         'quickstart',
         'prática',
+        'pratica',
         'uso correto',
+        'como funciona',
+        'demonstração',
+        'demonstracao',
+        'receitas',
       ],
     },
     {
@@ -162,18 +227,25 @@ export class NavWiki {
       keywords: [
         'links',
         'referências',
+        'referencias',
         'externo',
         'materiais',
         'fontes',
         'documentos',
+        'documentacao',
         'apoio',
         'suporte',
         'ajuda',
         'conteúdo',
+        'conteudo',
         'links externos',
         'links úteis',
+        'links uteis',
         'recursos',
         'extras',
+        'bibliografia',
+        'leitura adicional',
+        'referencias externas',
       ],
     },
     {
@@ -181,44 +253,62 @@ export class NavWiki {
       route: 'faq',
       keywords: [
         'faq',
+        'frequently asked questions',
         'dúvidas',
+        'duvidas',
         'perguntas',
         'questões',
+        'questoes',
         'respostas',
         'ajuda',
         'erro',
         'problema',
         'solução',
+        'solucao',
         'suporte',
         'frequente',
         'perguntas frequentes',
-        'informações rápidas',
+        'faq rápido',
+        'faq rapido',
+        'respostas rápidas',
+        'respostas rapidas',
+        'troubleshooting',
       ],
     },
   ];
+
   components: NavItem[] = [
     {
       label: 'Button',
       route: 'button',
       keywords: [
         'botão',
+        'botao',
         'button',
+        'btn',
         'cta',
+        'call to action',
         'ação',
+        'acao',
         'click',
+        'clique',
         'interação',
+        'interacao',
         'ui',
+        'ux',
         'componentes',
         'interface',
-        'botao',
-        'btn',
         'primário',
+        'primario',
         'secundário',
-        'call to action',
+        'secundario',
         'interativo',
         'submit',
         'link button',
         'design system',
+        'estado',
+        'disabled',
+        'icon button',
       ],
     },
     {
@@ -226,19 +316,27 @@ export class NavWiki {
       route: 'icon-button',
       keywords: [
         'ícone',
+        'icone',
         'icon',
         'botão',
+        'botao',
+        'ícone clicável',
+        'icone clicavel',
         'ação rápida',
+        'acao rapida',
         'atalho',
         'ui',
+        'ux',
         'componente',
         'botao icone',
+        'icon button',
         'icônico',
+        'iconico',
         'visual',
         'interativo',
         'mini botão',
-        'ícone clicável',
-        'design system',
+        'mini botao',
+        'glyph',
       ],
     },
     {
@@ -247,19 +345,27 @@ export class NavWiki {
       keywords: [
         'input',
         'campo',
+        'campo de texto',
         'formulário',
+        'formulario',
         'form',
         'texto',
         'caixa de texto',
         'placeholder',
         'dados',
         'digitável',
+        'digitavel',
         'form input',
-        'campo de texto',
         'componente de formulário',
+        'componente de formulario',
         'design system',
         'ux',
         'interação',
+        'interacao',
+        'validação',
+        'autocomplete',
+        'aria',
+        'label',
       ],
     },
     {
@@ -269,14 +375,20 @@ export class NavWiki {
         'checkbox',
         'check',
         'seleção',
+        'selecao',
         'marcar',
-        'opção',
-        'toggle',
-        'formulário',
-        'checkbox ui',
         'marcado',
+        'opção',
+        'opcao',
+        'toggle',
+        'alternativa',
+        'formulário',
+        'formulario',
+        'checkbox ui',
         'booleano',
+        'boolean',
         'seletor',
+        'multiple',
       ],
     },
     {
@@ -295,9 +407,11 @@ export class NavWiki {
         'toggle button',
         'ativo',
         'inativo',
+        'on off',
+        'booleano',
+        'estado',
       ],
     },
-
     {
       label: 'Tooltip',
       route: 'tooltip',
@@ -305,40 +419,62 @@ export class NavWiki {
         'tooltip',
         'ajuda',
         'dica',
+        'sugestão',
+        'sugestao',
         'hover',
         'balão',
+        'balao',
         'informação',
+        'informacao',
         'contexto',
         'explicação',
+        'explicacao',
         'descrição',
+        'descricao',
         'mouse',
         'hover tooltip',
         'chip',
+        'hint',
+        'popover',
+        'tooltip acessível',
       ],
     },
   ];
+    // normaliza texto: remove acentos, converte para lower case
+    private normalize(text: string): string {
+      return (text ?? '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+    }
+
+    private itemSearchable(item: NavItem): string {
+      return this.normalize(item.label + ' ' + (item.keywords ?? []).join(' '));
+    }
 
   // filtro da documentação
   get filteredDocs(): NavItem[] {
-    const term = this.searchTerm.trim().toLowerCase();
-    if (!term) return this.docs;
+    const raw = this.searchTerm.trim();
+    if (!raw) return this.docs;
+
+    const tokens = this.normalize(raw).split(/\s+/).filter(Boolean);
 
     return this.docs.filter((item) => {
-      const label = item.label.toLowerCase();
-      const keys = (item.keywords ?? []).join(' ').toLowerCase();
-      return label.includes(term) || keys.includes(term);
+      const searchable = this.itemSearchable(item);
+      return tokens.every((t) => searchable.includes(t));
     });
   }
 
   // filtro dos componentes
   get filteredComponents(): NavItem[] {
-    const term = this.searchTerm.trim().toLowerCase();
-    if (!term) return this.components;
+    const raw = this.searchTerm.trim();
+    if (!raw) return this.components;
+
+    const tokens = this.normalize(raw).split(/\s+/).filter(Boolean);
 
     return this.components.filter((item) => {
-      const label = item.label.toLowerCase();
-      const keys = (item.keywords ?? []).join(' ').toLowerCase();
-      return label.includes(term) || keys.includes(term);
+      const searchable = this.itemSearchable(item);
+      return tokens.every((t) => searchable.includes(t));
     });
   }
 
