@@ -297,41 +297,7 @@ export class NavWiki {
         'inativo',
       ],
     },
-    /**{
-      label: 'Card',
-      route: 'card',
-      keywords: [
-        'card',
-        'bloco',
-        'container',
-        'caixa',
-        'sessão',
-        'conteúdo',
-        'informação',
-        'componente visual',
-        'textura',
-        'estrutura',
-        'item',
-      ],
-    },
-    {
-      label: 'Modal',
-      route: 'modal',
-      keywords: [
-        'modal',
-        'popup',
-        'janela',
-        'diálogo',
-        'alerta',
-        'aviso',
-        'caixa flutuante',
-        'overlay',
-        'nível superior',
-        'janela modal',
-        'mensagem',
-        'caixa de diálogo',
-      ],
-    },*/
+
     {
       label: 'Tooltip',
       route: 'tooltip',
@@ -350,23 +316,6 @@ export class NavWiki {
         'chip',
       ],
     },
-    /**{
-      label: 'Badge',
-      route: 'badge',
-      keywords: [
-        'badge',
-        'etiqueta',
-        'marcador',
-        'status',
-        'selo',
-        'indicador',
-        'notificação',
-        'contador',
-        'alerta pequeno',
-        'pill',
-        'informação',
-      ],
-    },*/
   ];
 
   // filtro da documentação

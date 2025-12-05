@@ -17,11 +17,17 @@ a {
 }
 
 /* ===== CONTAINER GERAL ===== */
-
+.content{
+  background: radial-gradient(circle at 0% 0%, #fdf2ff 0, transparent 50%),
+    radial-gradient(circle at 80% 0%, #e0f9ff 0, transparent 55%),
+    radial-gradient(circle at 0% 100%, #fef3c7 0, transparent 50%);
+}
 .hero {
   position: relative;
-
-  max-width: 100%;
+  min-height: 80vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 48px 24px 72px;
   display: grid;
   grid-template-columns: minmax(0, 640px) minmax(260px, 520px);
@@ -29,17 +35,12 @@ a {
   align-items: center;
   overflow: hidden;
   isolation: isolate;
+  align-content: center;
 }
 
 /* camada de fundo com “dobras” de origami */
 .hero-origami-layer {
   position: absolute;
-  inset: -40%;
-  background: radial-gradient(circle at 0% 0%, #fdf2ff 0, transparent 50%),
-    radial-gradient(circle at 80% 0%, #e0f9ff 0, transparent 55%),
-    radial-gradient(circle at 0% 100%, #fef3c7 0, transparent 50%);
-  z-index: -2;
-  animation: bg-breathe 16s ease-in-out infinite alternate;
 }
 
 /* triângulos origami */
@@ -69,6 +70,13 @@ a {
   z-index: 1;
   max-width: 700px;
   animation: content-enter 700ms ease-out 80ms both;
+  .hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+}
+
 }
 
 .hero-illustration {
@@ -398,16 +406,8 @@ a {
     gap: 32px;
     padding: 32px 24px 64px;
   }
-
-  .hero-illustration {
-    order: -1;
-    text-align: center;
-  }
-
   .hero-illustration img {
-    max-width: 420px;
-    min-width: 220px;
-    margin: 0 auto;
+    display: none;
   }
 
   .team-grid {

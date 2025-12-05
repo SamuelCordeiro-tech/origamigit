@@ -3,8 +3,9 @@
 /* ========================================================= */
 
 .origami-ecosystem {
+  min-height: 80vh;
   position: relative;
-  padding: 40px 24px 72px;
+  padding: 160px 24px 72px;
     background: radial-gradient(circle at 0% 0%, #fdf2ff 0, transparent 50%),
     radial-gradient(circle at 80% 0%, #e0f9ff 0, transparent 55%),
     radial-gradient(circle at 0% 100%, #fef3c7 0, transparent 50%);
